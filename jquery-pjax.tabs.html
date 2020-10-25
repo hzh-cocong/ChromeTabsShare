@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="http://bsify.admui.com/jquery-pjax/?id=pjax-pushstate-ajax">jquery-pjax中文文档 - BSify</a><br/>
+    <a href="https://github.com/spatie/laravel-pjax">spatie/laravel-pjax: A pjax middleware for Laravel</a><br/>
+    <a href="https://zhuanlan.zhihu.com/p/89629239">Laravel-Pjax 使用 - 知乎</a><br/>
+    <a href="https://segmentfault.com/a/1190000014997514">laravel框架学习之路（二）pjax的使用 - laravel框架学习之路 - SegmentFault 思否</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="http://blog.haoji.me/chrome-plugin-develop.html#bu-zhi-chi-na-lian-JavaScript-de-zhi-xing">【干货】Chrome插件(扩展)开发全攻略-好记的博客</a><br/>
+    <a href="https://www.cnblogs.com/champagne/p/">我的随笔 - Chrome扩展开发极客 - 博客园</a><br/>
+    <a href="https://developer.chrome.com/extensions">What are extensions? - Google Chrome</a><br/>
+    <a href="https://chrome.google.com/webstore/developer/dashboard/">What are extensions? - Google Chrome</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://www.ruanyifeng.com/blog/2016/06/dns.html">DNS 原理入门 - 阮一峰的网络日志</a><br/>
+    <a href="https://www.iana.org/domains/root/files">IANA — Root Files</a><br/>
+    <a href="https://www.cnblogs.com/aspirant/p/10832712.html">DNS原理及其解析过程 - aspirant - 博客园</a><br/>
+    <a href="https://zhuanlan.zhihu.com/p/88260838">DNS原理及解析过程详解 - 知乎</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

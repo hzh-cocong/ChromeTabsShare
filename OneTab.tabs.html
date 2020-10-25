@@ -1,0 +1,20 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>这个世界，由我主宰。</title>
+</head>
+<body>
+        <a href="chrome-extension://chphlpgkkbolifaimnlloiipkdnihall/onetab.html">OneTab</a><br/>
+
+    <script>
+        var res = null;
+        document.querySelectorAll('a').forEach(function(el){
+            res = window.open(el.getAttribute('href'));
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

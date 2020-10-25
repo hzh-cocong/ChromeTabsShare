@@ -1,0 +1,24 @@
+<!DOCTYPE>
+                        <html>
+                        <head>
+                            <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+                            <title>SaveTabs</title>
+                        </head>
+                        <body>
+                                <a href="https://shields.io/">Shields.io: Quality metadata badges for open source projects</a><br/>
+    <a href="https://badgen.net/">Badgen - Fast badge generating service</a><br/>
+
+                            <script>
+                                var res = new Object();
+                                document.querySelectorAll('a').forEach(function(el){
+                                    var res2 = window.open(el.getAttribute('href'));
+                                    if(res2 == null) {
+                                        res = null;
+                                    }
+                                })
+                                if(res != null) {
+                                    window.close()
+                                };
+                            </script>
+                        </body>
+                        </html>

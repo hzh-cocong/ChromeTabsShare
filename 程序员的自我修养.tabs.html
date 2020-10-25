@@ -1,0 +1,24 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://github.com/biaochenxuying/blog/issues/49">GitHub 吸星大法 - 一年收获 2000+ Star 的心得 · Issue #49 · biaochenxuying/blog · GitHub</a><br/>
+    <a href="https://segmentfault.com/a/1190000009781697#articleHeader2">SegmentFault 技术周刊 Vol.26 - 年中复盘 --- 程序员的自我修养 - SegmentFault 社区周刊 - SegmentFault 思否</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

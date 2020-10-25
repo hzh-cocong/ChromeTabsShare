@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://github.com/ColorlibHQ/AdminLTE">ColorlibHQ/AdminLTE: AdminLTE - Free admin dashboard template based on Bootstrap 4</a><br/>
+    <a href="https://adminlte.io/docs/3.0/implementations.html">Implementations | AdminLTE 3 Documentation</a><br/>
+    <a href="http://html.test.com/AdminLTE/index.html#">AdminLTE 3 | Dashboard</a><br/>
+    <a href="https://github.com/jeroennoten/Laravel-AdminLTE/blob/master/resources/views/auth/login.blade.php">Laravel-AdminLTE/login.blade.php at master · jeroennoten/Laravel-AdminLTE</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

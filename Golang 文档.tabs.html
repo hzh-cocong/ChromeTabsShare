@@ -1,0 +1,30 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://www.runoob.com/go/go-concurrent.html">Go 并发 | 菜鸟教程</a><br/>
+    <a href="http://c.biancheng.net/view/88.html">Go语言GOPATH详解（Go语言工作目录）</a><br/>
+    <a href="https://chai2010.gitbooks.io/advanced-go-programming-book/content/ch1-basic/ch1-04-func-method-interface.html">1.4 函数、方法和接口 · Go语言高级编程</a><br/>
+    <a href="https://draveness.me/golang/#%E5%86%99%E4%BD%9C%E7%90%86%E5%BF%B5">Go 语言设计与实现 | Go 语言设计与实现</a><br/>
+    <a href="https://tour.go-zh.org/concurrency/1">Go 语言之旅</a><br/>
+    <a href="https://gobyexample.com/">Go by Example</a><br/>
+    <a href="https://golang.org/">The Go Programming Language</a><br/>
+    <a href="https://learnku.com/docs/the-way-to-go/92-regexp-package/3630">9.5. 自定义包和可见性 |《Go 入门指南》| Go 技术论坛</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

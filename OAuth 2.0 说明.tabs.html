@@ -1,0 +1,28 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/Wechat_webpage_authorization.html">微信开放文档</a><br/>
+    <a href="https://www.jianshu.com/p/7f2bbe408e8c">微信登录auth2.0时序图 - 简书</a><br/>
+    <a href="http://www.ruanyifeng.com/blog/2019/04/oauth_design.html">OAuth 2.0 的一个简单解释 - 阮一峰的网络日志</a><br/>
+    <a href="http://www.ruanyifeng.com/blog/2019/04/oauth-grant-types.html">OAuth 2.0 的四种方式 - 阮一峰的网络日志</a><br/>
+    <a href="http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html">理解OAuth 2.0 - 阮一峰的网络日志</a><br/>
+    <a href="https://oauth.net/2/">OAuth 2.0 — OAuth</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://docs.phpcomposer.com/03-cli.html#create-project">命令行 | Composer 中文文档 | Composer 中文网</a><br/>
+    <a href="https://pkg.phpcomposer.com/#how-to-use-packagist-mirror">Packagist / Composer 中国全量镜像</a><br/>
+    <a href="https://docs.phpcomposer.com/01-basic-usage.html">基本用法 | Composer 中文文档 | Composer 中文网</a><br/>
+    <a href="https://docs.phpcomposer.com/04-schema.html#autoload">composer.json 架构 | Composer 中文文档 | Composer 中文网</a><br/>
+
+    <script>
+        var res = null;
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

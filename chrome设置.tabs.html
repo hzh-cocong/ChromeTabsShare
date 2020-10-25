@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="chrome://apps/">应用</a><br/>
+    <a href="chrome://extensions/">扩展程序</a><br/>
+    <a href="chrome://net-internals/#dns">chrome://net-internals/#dns</a><br/>
+    <a href="chrome-extension://chphlpgkkbolifaimnlloiipkdnihall/onetab.html">OneTab</a><br/>
+
+    <script>
+        var res = null;
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

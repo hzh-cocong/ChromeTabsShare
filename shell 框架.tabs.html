@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://www.cnblogs.com/zhangshihai1232/articles/5767280.html">shell开源框架 - zhangshihai1232 - 博客园</a><br/>
+    <a href="https://github.com/alebcay/awesome-shell">alebcay/awesome-shell: A curated list of awesome command-line frameworks, toolkits, guides and gizmos. Inspired by awesome-php.</a><br/>
+    <a href="https://github.com/niieani/bash-oo-framework">niieani/bash-oo-framework: Bash Infinity is a modern boilerplate / framework / standard library for bash</a><br/>
+    <a href="https://github.com/abiosoft/ishell">abiosoft/ishell: Library for creating interactive cli applications.</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

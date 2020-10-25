@@ -1,0 +1,24 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://github.com/SpaceVim/SpaceVim">SpaceVim/SpaceVim: A community-driven modular vim distribution - The ultimate vim configuration</a><br/>
+    <a href="https://spacevim.org/cn/quick-start-guide/">入门指南 | SpaceVim</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

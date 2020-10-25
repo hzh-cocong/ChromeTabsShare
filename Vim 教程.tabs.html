@@ -1,0 +1,27 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="http://cenalulu.github.io/linux/all-vim-cheatsheat/">史上最全Vim快捷键键位图 -- 入门到进阶 • cenalulu's Tech Blog</a><br/>
+    <a href="https://coolshell.cn/articles/5426.html">简明 Vim 练级攻略 | | 酷 壳 - CoolShell</a><br/>
+    <a href="https://github.com/wsdjeg/vim-galore-zh_cn">wsdjeg/vim-galore-zh_cn: Vim 从入门到精通</a><br/>
+    <a href="https://vimjc.com/vimrc-config.html">Vim入门级基础配置-Vim入门教程(1) | vim教程网</a><br/>
+    <a href="https://github.com/oldratlee/vim-practice">oldratlee/vim-practice: 💘 Vim is awesome! Here is my awesome practice and study log.</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

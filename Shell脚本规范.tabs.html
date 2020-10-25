@@ -1,0 +1,25 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://blog.csdn.net/uestcyms/article/details/83752623">Shell脚本规范_Sunrise的专栏-CSDN博客_shell 规范</a><br/>
+    <a href="https://zh-google-styleguide.readthedocs.io/en/latest/google-shell-styleguide/contents/">Shell 风格指南 - 内容目录 — Google 开源项目风格指南</a><br/>
+    <a href="https://google.github.io/styleguide/shellguide.html">styleguide | Style guides for Google-originated open-source projects</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

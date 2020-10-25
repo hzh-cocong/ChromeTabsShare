@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://docsify.js.org/#/zh-cn/quickstart">快速开始</a><br/>
+    <a href="https://github.com/docsifyjs/docsify-cli">docsifyjs/docsify-cli: 🖌 docsify cli tool - A magical documentation generator.</a><br/>
+    <a href="http://localhost:3001/#/">首页</a><br/>
+    <a href="http://localhost:3000/#/?id=headline">首页</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

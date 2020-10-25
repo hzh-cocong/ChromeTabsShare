@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://hub.docker.com/_/kibana">kibana - Docker Hub</a><br/>
+    <a href="http://kibana.test.com/app/kibana#/home">Discover - Elastic</a><br/>
+    <a href="https://www.elastic.co/guide/cn/kibana/current/getting-started.html">基础入门 | Kibana 用户手册 | Elastic</a><br/>
+    <a href="https://www.elastic.co/guide/en/kibana/7.8/monitoring-settings-kb.html">Monitoring settings in Kibana | Kibana Guide [7.8] | Elastic</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

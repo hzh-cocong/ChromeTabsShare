@@ -1,0 +1,27 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://segmentfault.com/a/1190000011273388">AppleScript脚本入门 - 从前端到全栈 - SegmentFault 思否</a><br/>
+    <a href="https://www.jianshu.com/p/10c6b6b6e095">AppleScript 入门 - 简书</a><br/>
+    <a href="https://sspai.com/post/46912">AppleScript 入门：探索 macOS 自动化 - 少数派</a><br/>
+    <a href="https://www.notion.so/AppleScript-c07b90f850ea42e990b3ea2333f9b252">AppleScript 教程</a><br/>
+    <a href="https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html">Introduction to AppleScript Language Guide</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

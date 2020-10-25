@@ -1,0 +1,23 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>这个世界，由我主宰。</title>
+</head>
+<body>
+        <a href="https://laravel-admin.org/">首页 | Laravel-admin</a><br/>
+    <a href="https://laravel-admin.org/docs/zh/permission">文档 | Laravel-admin</a><br/>
+    <a href="https://github.com/z-song/laravel-admin">z-song/laravel-admin: Build a full-featured administrative interface in ten minutes</a><br/>
+    <a href="https://laravel-admin.org/extensions?category=1">扩展 | Laravel-admin</a><br/>
+
+    <script>
+        var res = null;
+        document.querySelectorAll('a').forEach(function(el){
+            res = window.open(el.getAttribute('href'));
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://www.jianshu.com/p/6516f2a3ce36">为什么要用Nuxt.js？ - 简书</a><br/>
+    <a href="https://zh.nuxtjs.org/guide/directory-structure/">目录结构 - NuxtJS</a><br/>
+    <a href="https://github.com/nuxt/nuxt.js">nuxt/nuxt.js: The Intuitive Vue Framework</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

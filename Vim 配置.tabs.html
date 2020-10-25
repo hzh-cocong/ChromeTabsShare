@@ -1,0 +1,28 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://github.com/amix/vimrc">amix/vimrc: The ultimate Vim configuration (vimrc)</a><br/>
+    <a href="https://github.com/spf13/spf13-vim">spf13/spf13-vim: The ultimate vim distribution</a><br/>
+    <a href="https://github.com/chxuan/vimplus">chxuan/vimplus: An automatic configuration program for vim</a><br/>
+    <a href="https://github.com/junegunn/vim-plug">junegunn/vim-plug: Minimalist Vim Plugin Manager</a><br/>
+    <a href="https://github.com/VundleVim/Vundle.vim">VundleVim/Vundle.vim: Vundle, the plug-in manager for Vim</a><br/>
+    <a href="https://github.com/altercation/vim-colors-solarized">altercation/vim-colors-solarized: precision colorscheme for the vim text editor</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

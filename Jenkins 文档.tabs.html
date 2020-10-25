@@ -1,0 +1,28 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://www.jenkins.io/zh/doc/">Jenkins 用户手册</a><br/>
+    <a href="https://www.jianshu.com/p/5f671aca2b5a">Jenkins详细教程 - 简书</a><br/>
+    <a href="https://www.liaoxuefeng.com/article/1083282007018592">使用Jenkins进行持续集成 - 廖雪峰的官方网站</a><br/>
+    <a href="https://hub.docker.com/_/jenkins">jenkins - Docker Hub</a><br/>
+    <a href="https://hub.docker.com/r/jenkins/jenkins">jenkins/jenkins - Docker Hub</a><br/>
+    <a href="http://jenkins.test.com/">Setup Wizard [Jenkins]</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

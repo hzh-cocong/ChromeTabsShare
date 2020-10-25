@@ -1,0 +1,28 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://hub.docker.com/_/mongo">mongo - Docker Hub</a><br/>
+    <a href="https://docs.mongodb.com/manual/reference/program/mongod/#cmdoption-mongod-auth">mongod — MongoDB Manual</a><br/>
+    <a href="https://www.jianshu.com/p/e48f0ec7a322">docker-compose 安装mongo - 简书</a><br/>
+    <a href="https://learnku.com/server/t/37106">Docker 实战教程：使用 docker-compose 管理 MongoDB | Server 运维论坛</a><br/>
+    <a href="https://zhuanlan.zhihu.com/p/148054551">docker安装MongoDB数据库 - 知乎</a><br/>
+    <a href="https://segmentfault.com/a/1190000020525887">Docker安装MongoDB - 个人文章 - SegmentFault 思否</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

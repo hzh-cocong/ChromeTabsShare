@@ -1,0 +1,24 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://github.com/biaochenxuying/awesome-books">biaochenxuying/awesome-books: 160+ 本技术类精华电子书开源了，免费下载，包括 前端、后端、数据结构与算法、计算机基础、设计模式、数据库等书籍</a><br/>
+    <a href="https://github.com/guanpengchn/awesome-books">guanpengchn/awesome-books: 开发者推荐阅读的书籍</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>
