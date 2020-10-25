@@ -1,0 +1,27 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://www.jenkins.io/zh/doc/pipeline/tour/running-multiple-steps/">执行多个步骤（step）</a><br/>
+    <a href="http://jenkins.test.com/job/My%20Pipeline/job/feature%252Ftest/">feature/test [My Pipeline] [Jenkins]</a><br/>
+    <a href="http://jenkins.test.com/job/My%20Pipeline2/job/master/">master [My Pipeline2] [Jenkins]</a><br/>
+    <a href="https://github.com/hzh-test/jenkins-test/tree/feature/test">hzh-test/jenkins-test at feature/test</a><br/>
+    <a href="http://gitlab.test.com/hzh/jenkins-test">hzh / jenkins-test · GitLab</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

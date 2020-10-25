@@ -1,0 +1,27 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://choosealicense.com/licenses/">Licenses | Choose a License</a><br/>
+    <a href="https://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html">如何选择开源许可证？ - 阮一峰的网络日志</a><br/>
+    <a href="https://www.zhihu.com/question/19568896">主流开源协议之间有何异同？ - 知乎</a><br/>
+    <a href="https://blog.csdn.net/testcs_dn/article/details/38496107">一张图看懂开源许可协议，开源许可证GPL、BSD、MIT、Mozilla、Apache和LGPL的区别_无知人生，记录点滴-CSDN博客</a><br/>
+    <a href="https://www.runoob.com/w3cnote/open-source-license.html">各种开源协议介绍 | 菜鸟教程</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

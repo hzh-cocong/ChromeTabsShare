@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://juejin.im/post/6844903623567081486">Jekyll使用教程笔记 一 - 掘金</a><br/>
+    <a href="https://www.jekyll.com.cn/docs/structure/">目录结构 | Jekyll • 一个简洁的博客、静态网站生成工具</a><br/>
+    <a href="http://jekyllthemes.org/page2/">Jekyll Themes</a><br/>
+    <a href="http://127.0.0.1:4000/">site title | Some short description on your site</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://www.runoob.com/python/os-file-methods.html">Python OS 文件/目录方法 | 菜鸟教程</a><br/>
+    <a href="https://www.runoob.com/python3/python3-multithreading.html">Python3 多线程 | 菜鸟教程</a><br/>
+    <a href="https://www.runoob.com/python/python-2x-3x.html">Python2.x与3​​.x版本区别 | 菜鸟教程</a><br/>
+    <a href="https://python3-cookbook.readthedocs.io/zh_CN/latest/chapters/p15_c_extensions.html">第十五章：C语言扩展 — python3-cookbook 3.0.0 文档</a><br/>
+    <a href="https://www.liujiangblog.com/course/python/5">python pip的安装和使用 - 刘江的python教程</a><br/>
+    <a href="https://www.python.org/psf-landing/">Python Software Foundation</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

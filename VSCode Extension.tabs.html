@@ -1,0 +1,24 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="http://blog.haoji.me/vscode-plugin-overview.html">VSCode插件开发全攻略（一）概览-好记的博客</a><br/>
+    <a href="https://code.visualstudio.com/api">Extension API | Visual Studio Code Extension API</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

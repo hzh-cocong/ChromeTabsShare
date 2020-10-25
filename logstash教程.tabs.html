@@ -1,0 +1,28 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://hub.docker.com/_/logstash">logstash - Docker Hub</a><br/>
+    <a href="https://www.elastic.co/guide/en/logstash/7.8/installing-logstash.html">Installing Logstash | Logstash Reference [7.8] | Elastic</a><br/>
+    <a href="http://localhost:9600/">localhost:9600</a><br/>
+    <a href="http://docs.flycloud.me/docs/ELKStack/logstash/get-start/hello-world.html">hello world | ELK 教程</a><br/>
+    <a href="https://doc.yonyoucloud.com/doc/logstash-best-practice-cn/get_start/hello_world.html">Hello World | Logstash 最佳实践</a><br/>
+    <a href="https://hezhiqiang8909.gitbook.io/java/docs/javatool/elastic/elastic-logstash">Elastic 技术栈之 Logstash 基础 - Java教程</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

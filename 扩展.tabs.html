@@ -1,0 +1,21 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>这个世界，由我主宰。</title>
+</head>
+<body>
+        <a href="chrome://extensions/">扩展程序</a><br/>
+    <a href="chrome://net-internals/#dns">chrome://net-internals/#dns</a><br/>
+
+    <script>
+        var res = null;
+        document.querySelectorAll('a').forEach(function(el){
+            res = window.open(el.getAttribute('href'));
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

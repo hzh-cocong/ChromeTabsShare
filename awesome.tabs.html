@@ -1,0 +1,24 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://github.com/alebcay/awesome-shell/blob/master/README_ZH-CN.md">awesome-shell/README_ZH-CN.md at master · alebcay/awesome-shell</a><br/>
+    <a href="https://github.com/ziadoz/awesome-php">ziadoz/awesome-php: A curated list of amazingly awesome PHP libraries, resources and shiny things.</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

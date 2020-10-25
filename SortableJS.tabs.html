@@ -1,0 +1,27 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://github.com/SortableJS/Sortable">SortableJS/Sortable: Sortable — is a JavaScript library for reorderable drag-and-drop lists on modern browsers and touch devices. No jQuery required. Supports Meteor, AngularJS, React, Polymer, Vue, Ember, Knockout and any CSS library, e.g. Bootstrap.</a><br/>
+    <a href="https://github.com/SortableJS/jquery-sortablejs">SortableJS/jquery-sortablejs: A jQuery binding for SortableJS</a><br/>
+    <a href="http://sortablejs.github.io/Sortable/">SortableJS</a><br/>
+    <a href="http://www.sortablejs.com/#">Sortable.js中文网</a><br/>
+    <a href="http://www.sortablejs.com/options.html">Sortable.js中文网|配置</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

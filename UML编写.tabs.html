@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://blog.csdn.net/sun8112133/article/details/79891479">Markdown 之 UML图的实用画法_小异常的博客-CSDN博客_markdown uml</a><br/>
+    <a href="https://www.jianshu.com/p/30f6a9c06083">程序员绘图工具-Plantuml - 简书</a><br/>
+    <a href="https://plantuml.com/zh/starting">菜鸟指南</a><br/>
+    <a href="http://www.plantuml.com/plantuml/uml/SoWkIImgAStDuNBAJrBGjLDmpCbCJbMmKiX8pSd9vt98pKi1IW80">PlantUML Web Server</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

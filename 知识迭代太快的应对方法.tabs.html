@@ -1,0 +1,25 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://www.douban.com/group/topic/147120559/">现在知识迭代太快了，一不小心就被淘汰了。想建个...</a><br/>
+    <a href="https://blog.csdn.net/yangpeng5209988/article/details/90108529">新技术新框架层出不穷，作为技术人员应该怎么办？_yangpeng5209988的博客-CSDN博客_新技术层出不穷</a><br/>
+    <a href="https://www.baidu.com/s?ie=utf-8&wd=%E9%80%82%E5%BD%93%E5%A2%9E%E5%8A%A0%E5%B9%BF%E5%BA%A6%EF%BC%8C%E5%A4%9A%E8%8A%B1%E6%97%B6%E9%97%B4%E5%A2%9E%E5%8A%A0%E6%B7%B1%E5%BA%A6">适当增加广度,多花时间增加深度_百度搜索</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

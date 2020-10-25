@@ -1,0 +1,25 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://juejin.im/post/6844904093706616846">Jenkins插件下载慢问题 - 掘金</a><br/>
+    <a href="https://www.jianshu.com/p/3b5ebe85c034">jenkins安装插件的两种方式 - 简书</a><br/>
+    <a href="https://plugins.jenkins.io/">Jenkins Plugins</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

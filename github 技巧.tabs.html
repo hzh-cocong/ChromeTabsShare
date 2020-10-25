@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://www.jianshu.com/p/758e8bd48308">丧心病狂的Github技巧 - 简书</a><br/>
+    <a href="https://www.sohu.com/a/328863470_231667">这些牛逼的GitHub 使用技巧你知道几个？_master</a><br/>
+    <a href="https://blog.csdn.net/luoyayun361/article/details/88374672">Github 搜索技巧，快速找到好资源_luoyayun361的专栏-CSDN博客_github搜索技巧</a><br/>
+    <a href="https://sspai.com/post/46061">掌握 3 个搜索技巧，在 GitHub 上快速找到实用软件资源 - 少数派</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

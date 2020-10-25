@@ -1,0 +1,24 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="http://rabbitmq.mr-ping.com/AMQP/AMQP_0-9-1_Model_Explained.html">AMQP 0.9.1 模型解析 · RabbitMQ in Chinese</a><br/>
+    <a href="https://mcxiaoke.gitbooks.io/mqtt-cn/content/">Introduction · MQTT协议中文版</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

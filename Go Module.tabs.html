@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://zhuanlan.zhihu.com/p/59687626">开始使用 Go Module - 知乎</a><br/>
+    <a href="https://goframe.org/prepare/gomodule#">Go Module - 准备工作 - GoFrame开发框架 - 砥砺前行，不忘初心 - 高性能Go Web框架</a><br/>
+    <a href="https://blog.csdn.net/qq_42568693/article/details/104745002">gin无法安装，go get gin没反应，个人解决方案_qq_42568693的博客-CSDN博客</a><br/>
+    <a href="http://127.0.0.1:8080/ping">127.0.0.1:8080/ping</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

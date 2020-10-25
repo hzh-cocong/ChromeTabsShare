@@ -1,0 +1,24 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://cloud.tencent.com/developer/article/1563303">jenkins学习3-Jenkins插件下载速度慢、安装失败 - 云+社区 - 腾讯云</a><br/>
+    <a href="https://www.cnblogs.com/yoyoketang/p/12115432.html">jenkins学习2-首次输入密码后卡在空白页不加载 - 上海-悠悠 - 博客园</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>

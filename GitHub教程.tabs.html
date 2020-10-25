@@ -1,0 +1,27 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>SaveTabs</title>
+</head>
+<body>
+        <a href="https://github.com/oldratlee/translations/blob/master/git-workflows-and-tutorials/README.md#-%E6%A6%82%E8%BF%B0">translations/README.md at master · oldratlee/translations</a><br/>
+    <a href="https://github.com/k88hudson/git-flight-rules/blob/master/README_zh-CN.md">git-flight-rules/README_zh-CN.md at master · k88hudson/git-flight-rules</a><br/>
+    <a href="https://www.liaoxuefeng.com/wiki/896043488029600/900937935629664">使用GitHub - 廖雪峰的官方网站</a><br/>
+    <a href="https://docs.github.com/cn">GitHub.com 帮助文档</a><br/>
+    <a href="https://opensource.guide/zh-hans/">开源软件指南 | Open Source Guides</a><br/>
+
+    <script>
+        var res = new Object();
+        document.querySelectorAll('a').forEach(function(el){
+            var res2 = window.open(el.getAttribute('href'));
+            if(res2 == null) {
+                res = null;
+            }
+        })
+        if(res != null) {
+            window.close()
+        };
+    </script>
+</body>
+</html>
